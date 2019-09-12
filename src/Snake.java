@@ -1,3 +1,5 @@
+import org.junit.Before;
+import org.junit.Test;
 
 public class Snake {
 	private String name;
@@ -18,13 +20,53 @@ public class Snake {
 
 	
 	//TC1 snake is healthy
-	public class Healthty
+	public class SnakeTest {
 
-{
-	
+		
 
-}
+		Snake  snake;
 
+		
+
+
+
+		@Before
+
+		public void setUp() throws Exception {
+
+			
+
+			
+
+		//Creating the snakes	
+
+			snake = new Snake("first" , 15, "grass");
+
+			snake = new Snake("second", 20, "vegetables");
+
+			}
+
+	@Test
+
+		public void isHealthy() {
+
+		
+
+		boolean snakeFood = snake.isHealthy();
+
+		
+
+		
+
+			}
+
+		
+
+		
+
+
+
+	}
 	
 	
 	public boolean isHealthy() {
